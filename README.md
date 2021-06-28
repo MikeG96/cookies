@@ -1,6 +1,6 @@
-# @ngx-cookies/anxelin
+# ngx-ssr-cookies
 
-[![npm version](https://badge.fury.io/js/%40ngx-utils%2Fcookies.svg)](https://badge.fury.io/js/%40ngx-utils%2Fcookies) [![npm downloads](https://img.shields.io/npm/dm/@ngx-cookies/anxelin.svg)](https://www.npmjs.com/package/@ngx-cookies/anxelin)
+[![npm version](https://badge.fury.io/js/%40ngx-utils%2Fcookies.svg)](https://badge.fury.io/js/%40ngx-utils%2Fcookies) [![npm downloads](https://img.shields.io/npm/dm/ngx-ssr-cookies.svg)](https://www.npmjs.com/package/ngx-ssr-cookies)
 
 Manage your cookies on client and server side (Angular Universal)
 
@@ -8,7 +8,7 @@ Example in [@ngx-utils/universal-starter](https://github.com/ngx-utils/universal
 
 ## Table of contents:
 
-- [@ngx-cookies/anxelin](#ngx-cookiesanxelin)
+- [ngx-ssr-cookies](#ngx-ssr-cookiesanxelin)
   - [Table of contents:](#table-of-contents)
   - [Prerequisites](#prerequisites)
   - [Getting started](#getting-started)
@@ -28,10 +28,10 @@ This package depends on `@angular v12.0.0`.
 
 ### Installation
 
-Install **@ngx-cookies/anxelin** from npm:
+Install **ngx-ssr-cookies** from npm:
 
 ```bash
-npm install @ngx-cookies/anxelin --save
+npm install ngx-ssr-cookies --save
 ```
 
 ### browser.module.ts
@@ -41,7 +41,7 @@ Add **BrowserCookiesModule** to your browser module:
 ```ts
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { BrowserCookiesModule } from '@ngx-cookies/anxelin/browser';
+import { BrowserCookiesModule } from 'ngx-ssr-cookies/browser';
 ...
 import { AppModule } from './app/app.module';
 import { AppComponent } from './app/app.component';
@@ -66,7 +66,7 @@ Add **ServerCookiesModule** to your server module:
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { ServerModule } from '@angular/platform-server';
-import { ServerCookiesModule } from '@ngx-cookies/anxelin/server';
+import { ServerCookiesModule } from 'ngx-ssr-cookies/server';
 ...
 import { AppModule } from './app/app.module';
 import { AppComponent } from './app/app.component';
@@ -150,11 +150,11 @@ app.engine("html", (_, options, callback) => {
 });
 ```
 
-Then just import `CookiesService` from `@ngx-cookies/anxelin` and use it:
+Then just import `CookiesService` from `ngx-ssr-cookies` and use it:
 
 ```ts
 import { Component, OnInit } from "@angular/core";
-import { CookiesService } from "@ngx-cookies/anxelin";
+import { CookiesService } from "ngx-ssr-cookies";
 
 @Component({
   selector: "app-root",
@@ -205,7 +205,7 @@ import {
   CookiesService,
   CookiesOptionsService,
   CookiesOptions
-} from "@ngx-cookies/anxelin";
+} from "ngx-ssr-cookies";
 
 @Injectable()
 export class ServerCookiesService extends CookiesService {

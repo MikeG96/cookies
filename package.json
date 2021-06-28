@@ -1,5 +1,5 @@
 {
-  "name": "@ngx-cookies/anxelin",
+  "name": "ngx-ssr-cookies",
   "version": "0.1.0",
   "description": "Manage your cookies on client and server side (Angular Universal)",
   "keywords": [
