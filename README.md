@@ -8,7 +8,7 @@ Example in [@ngx-utils/universal-starter](https://github.com/ngx-utils/universal
 
 ## Table of contents:
 
-- [ngx-ssr-cookies](#ngx-ssr-cookiesanxelin)
+- [ngx-ssr-cookies](#ngx-ssr-cookies)
   - [Table of contents:](#table-of-contents)
   - [Prerequisites](#prerequisites)
   - [Getting started](#getting-started)
@@ -22,7 +22,7 @@ Example in [@ngx-utils/universal-starter](https://github.com/ngx-utils/universal
 
 ## Prerequisites
 
-This package depends on `@angular v12.0.0`.
+This package depends on `@angular v10.0.0`.
 
 ## Getting started
 

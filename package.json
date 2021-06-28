@@ -1,6 +1,6 @@
 {
   "name": "ngx-ssr-cookies",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "description": "Manage your cookies on client and server side (Angular Universal)",
   "keywords": [
     "angular",
@@ -30,20 +30,20 @@
     "release": "npm run build && cd ./release && npm publish"
   },
   "peerDependencies": {
-    "@angular/core": "12.1.0",
+    "@angular/core": "10.0.14",
     "rxjs": "7.1.0",
     "zone.js": "^0.11.4"
   },
   "devDependencies": {
-    "@angular/common": "12.1.0",
-    "@angular/compiler": "12.1.0",
-    "@angular/compiler-cli": "12.1.0",
-    "@angular/core": "12.1.0",
+    "@angular/common": "10.0.14",
+    "@angular/compiler": "10.0.14",
+    "@angular/compiler-cli": "10.0.14",
+    "@angular/core": "10.0.14",
     "cpy-cli": "^3.1.1",
     "rimraf": "^3.0.2",
     "rollup": "^0.43.0",
     "rxjs": "7.1.0",
-    "typescript": "4.3.4",
+    "typescript": "3.9.2",
     "uglify-js": "^3.0.18",
     "zone.js": "^0.11.4"
   },
