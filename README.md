@@ -1,6 +1,6 @@
-# @ngx-utils/cookies
+# @ngx-cookies/anxelin
 
-[![npm version](https://badge.fury.io/js/%40ngx-utils%2Fcookies.svg)](https://badge.fury.io/js/%40ngx-utils%2Fcookies) [![npm downloads](https://img.shields.io/npm/dm/@ngx-utils/cookies.svg)](https://www.npmjs.com/package/@ngx-utils/cookies)
+[![npm version](https://badge.fury.io/js/%40ngx-utils%2Fcookies.svg)](https://badge.fury.io/js/%40ngx-utils%2Fcookies) [![npm downloads](https://img.shields.io/npm/dm/@ngx-cookies/anxelin.svg)](https://www.npmjs.com/package/@ngx-cookies/anxelin)
 
 Manage your cookies on client and server side (Angular Universal)
 
@@ -8,28 +8,30 @@ Example in [@ngx-utils/universal-starter](https://github.com/ngx-utils/universal
 
 ## Table of contents:
 
-- [Prerequisites](#prerequisites)
-- [Getting started](#getting-started)
-  - [Installation](#installation)
-  - [browser.module.ts](#browsermodulets)
-  - [server.module.ts](#servermodulets)
-  - [Cookies options](#cookies-options)
-- [API](#api)
-- [Example of usage](#example-of-usage)
-- [License](#license)
+- [@ngx-cookies/anxelin](#ngx-cookiesanxelin)
+  - [Table of contents:](#table-of-contents)
+  - [Prerequisites](#prerequisites)
+  - [Getting started](#getting-started)
+    - [Installation](#installation)
+    - [browser.module.ts](#browsermodulets)
+    - [server.module.ts](#servermodulets)
+    - [Cookies options](#cookies-options)
+  - [API](#api)
+  - [Example of usage](#example-of-usage)
+  - [License](#license)
 
 ## Prerequisites
 
-This package depends on `@angular v9.0.0`.
+This package depends on `@angular v12.0.0`.
 
 ## Getting started
 
 ### Installation
 
-Install **@ngx-utils/cookies** from npm:
+Install **@ngx-cookies/anxelin** from npm:
 
 ```bash
-npm install @ngx-utils/cookies --save
+npm install @ngx-cookies/anxelin --save
 ```
 
 ### browser.module.ts
@@ -39,7 +41,7 @@ Add **BrowserCookiesModule** to your browser module:
 ```ts
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { BrowserCookiesModule } from '@ngx-utils/cookies/browser';
+import { BrowserCookiesModule } from '@ngx-cookies/anxelin/browser';
 ...
 import { AppModule } from './app/app.module';
 import { AppComponent } from './app/app.component';
@@ -64,7 +66,7 @@ Add **ServerCookiesModule** to your server module:
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { ServerModule } from '@angular/platform-server';
-import { ServerCookiesModule } from '@ngx-utils/cookies/server';
+import { ServerCookiesModule } from '@ngx-cookies/anxelin/server';
 ...
 import { AppModule } from './app/app.module';
 import { AppComponent } from './app/app.component';
@@ -148,11 +150,11 @@ app.engine("html", (_, options, callback) => {
 });
 ```
 
-Then just import `CookiesService` from `@ngx-utils/cookies` and use it:
+Then just import `CookiesService` from `@ngx-cookies/anxelin` and use it:
 
 ```ts
 import { Component, OnInit } from "@angular/core";
-import { CookiesService } from "@ngx-utils/cookies";
+import { CookiesService } from "@ngx-cookies/anxelin";
 
 @Component({
   selector: "app-root",
@@ -203,7 +205,7 @@ import {
   CookiesService,
   CookiesOptionsService,
   CookiesOptions
-} from "@ngx-utils/cookies";
+} from "@ngx-cookies/anxelin";
 
 @Injectable()
 export class ServerCookiesService extends CookiesService {
