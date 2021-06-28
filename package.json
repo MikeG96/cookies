@@ -1,6 +1,6 @@
 {
   "name": "ngx-ssr-cookies",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Manage your cookies on client and server side (Angular Universal)",
   "keywords": [
     "angular",
