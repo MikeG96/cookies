@@ -1,6 +1,6 @@
 {
-  "name": "@ngx-utils/cookies",
-  "version": "4.0.0",
+  "name": "@ngx-cookies/anxelin",
+  "version": "5.0.0",
   "description": "Manage your cookies on client and server side (Angular Universal)",
   "keywords": [
     "angular",
@@ -8,7 +8,11 @@
     "angular ssr",
     "ssr",
     "cookie",
-    "cookies"
+    "cookies",
+    "angular 9",
+    "angular 10",
+    "angular 11",
+    "angular 12"
   ],
   "main": "bundles/cookies.umd.min.js",
   "module": "index.js",
@@ -46,12 +50,12 @@
   "dependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ngx-utils/cookies.git"
+    "url": "git+https://github.com/MikeG96/cookies.git"
   },
-  "homepage": "https://github.com/ngx-utils/cookies#readme",
+  "homepage": "https://github.com/MikeG96/cookies#readme",
   "bugs": {
-    "url": "https://github.com/ngx-utils/cookies/issues"
+    "url": "https://github.com/MikeG96/cookies/issues"
   },
-  "author": "Anton Barada",
+  "author": "mikeg96 (https://github.com/MikeG96)",
   "license": "MIT"
 }
